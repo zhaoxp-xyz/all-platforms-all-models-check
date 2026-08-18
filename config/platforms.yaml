@@ -1,0 +1,221 @@
+- name: google_gemini
+  enabled: true
+  protocols:
+  - openai
+  base_url: https://generativelanguage.googleapis.com/v1beta/openai
+  auth:
+    type: api_key
+    api_key: REPLACE_WITH_YOUR_API_KEY
+  proxy: http://192.168.31.81:8890
+  concurrency: 8
+  model_filters: []
+  fallback_triggers:
+  - '400'
+  - '401'
+  - '404'
+  timeout: 120
+  retry: 2
+- name: groq
+  enabled: true
+  protocols:
+  - openai
+  base_url: https://api.groq.com/openai
+  auth:
+    type: api_key
+    api_key: REPLACE_WITH_YOUR_API_KEY
+  proxy: http://192.168.31.81:8890
+  concurrency: 8
+  model_filters: []
+  fallback_triggers:
+  - '400'
+  - '401'
+  - '404'
+  timeout: 120
+  retry: 2
+- name: nvidia
+  enabled: true
+  protocols:
+  - openai
+  base_url: https://integrate.api.nvidia.com
+  auth:
+    type: api_key
+    api_key: REPLACE_WITH_YOUR_API_KEY
+  proxy: http://192.168.31.81:8890
+  concurrency: 8
+  model_filters: []
+  fallback_triggers:
+  - '400'
+  - '401'
+  - '404'
+  timeout: 120
+  retry: 2
+- name: mistral
+  enabled: true
+  protocols:
+  - openai
+  base_url: https://api.mistral.ai
+  auth:
+    type: api_key
+    api_key: REPLACE_WITH_YOUR_API_KEY
+  proxy: http://192.168.31.81:8890
+  concurrency: 8
+  model_filters: []
+  fallback_triggers:
+  - '400'
+  - '401'
+  - '404'
+  timeout: 120
+  retry: 2
+- name: openrouter
+  enabled: true
+  protocols:
+  - openai
+  base_url: https://openrouter.ai/api
+  auth:
+    type: api_key
+    api_key: REPLACE_WITH_YOUR_API_KEY
+  proxy: http://192.168.31.81:8890
+  concurrency: 8
+  model_filters: []
+  fallback_triggers:
+  - '400'
+  - '401'
+  - '404'
+  timeout: 120
+  retry: 2
+- name: zhipu
+  enabled: true
+  protocols:
+  - openai
+  base_url: https://open.bigmodel.cn/api/paas/v4
+  auth:
+    type: api_key
+    api_key: REPLACE_WITH_YOUR_API_KEY
+  proxy: 'null'
+  concurrency: 8
+  model_filters: []
+  fallback_triggers:
+  - '400'
+  - '401'
+  - '404'
+  timeout: 120
+  retry: 2
+- name: opencode
+  enabled: true
+  protocols:
+  - openai
+  base_url: https://opencode.ai/zen
+  auth:
+    type: api_key
+    api_key: REPLACE_WITH_YOUR_API_KEY
+  proxy: http://192.168.31.81:8890
+  concurrency: 8
+  model_filters: []
+  fallback_triggers:
+  - '400'
+  - '401'
+  - '404'
+  timeout: 120
+  retry: 2
+- name: agnes
+  enabled: true
+  protocols:
+  - openai
+  base_url: https://apihub.agnes-ai.com
+  auth:
+    type: api_key
+    api_key: REPLACE_WITH_YOUR_API_KEY
+  proxy: http://192.168.31.81:8890
+  concurrency: 8
+  model_filters: []
+  fallback_triggers:
+  - '400'
+  - '401'
+  - '404'
+  timeout: 120
+  retry: 2
+- name: nara
+  enabled: true
+  protocols:
+  - openai
+  base_url: https://router.bynara.id
+  auth:
+    type: api_key
+    api_key: REPLACE_WITH_YOUR_API_KEY
+  proxy: http://192.168.31.81:8890
+  concurrency: 8
+  model_filters: []
+  fallback_triggers:
+  - '400'
+  - '401'
+  - '404'
+  timeout: 120
+  retry: 2
+- name: omniroute
+  enabled: true
+  protocols:
+  - openai
+  base_url: http://192.168.31.40:20128
+  auth:
+    type: api_key
+    api_key: REPLACE_WITH_YOUR_API_KEY
+  proxy: 'null'
+  concurrency: 8
+  model_filters: []
+  fallback_triggers:
+  - '400'
+  - '401'
+  - '404'
+  timeout: 120
+  retry: 2
+- name: freellmapi-40
+  enabled: true
+  protocols:
+  - openai
+  base_url: http://192.168.31.40:3001
+  auth:
+    type: api_key
+    api_key: REPLACE_WITH_YOUR_API_KEY
+  proxy: 'null'
+  concurrency: 8
+  model_filters: []
+  fallback_triggers:
+  - '400'
+  - '401'
+  - '404'
+  timeout: 120
+  retry: 2
+- name: freellmapi-23
+  enabled: true
+  protocols:
+  - openai
+  base_url: http://192.168.31.23:3001
+  auth:
+    type: api_key
+    api_key: REPLACE_WITH_YOUR_API_KEY
+  proxy: 'null'
+  concurrency: 8
+  model_filters: []
+  fallback_triggers:
+  - '400'
+  - '401'
+  - '404'
+  timeout: 120
+  retry: 2
+- name: g4f
+  enabled: true
+  protocols:
+  - openai
+  base_url: http://192.168.31.40:1337
+  auth:
+    type: api_key
+    api_key: REPLACE_WITH_YOUR_API_KEY
+  proxy: 'null'
+  concurrency: 8
+  model_filters: []
+  fallback_triggers:
+  - '400'
+  - '401'
+  - '404'
+  timeout: 120
+  retry: 2

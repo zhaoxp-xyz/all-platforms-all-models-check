@@ -1,0 +1,14 @@
+# 结果产物(每次运行生成,不入库)
+results/*.json
+results/*.md
+!results/.gitkeep
+# opencode session 缓存
+.omo/
+# 密钥/环境
+.env
+*.key
+*.pem
+# Python
+__pycache__/
+*.pyc
+.venv/__pycache__/
