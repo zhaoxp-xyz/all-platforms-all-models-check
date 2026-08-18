@@ -8,6 +8,8 @@ results/*.md
 .env
 *.key
 *.pem
+# 本地真 key 配置(不入库, 用 config/platforms.yaml 脱敏示例)
+config/platforms.local.yaml
 # Python
 __pycache__/
 *.pyc
